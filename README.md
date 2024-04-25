@@ -1,0 +1,1 @@
+Dokumentácia k projektu.
