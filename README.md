@@ -1,1 +1,1 @@
-Dokumentácia k projektu.
+# Fiktívna dokumentácia k projektu.

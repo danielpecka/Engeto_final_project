@@ -1,0 +1,57 @@
+Kód banky;Banka - Poskytovatel platebních služeb;BIC kód (SWIFT)
+0100;Komerční banka, a.s.;KOMBCZPP
+0300;Československá obchodní banka, a.s.;CEKOCZPP
+0600;MONETA Money Bank, a.s.;AGBACZPP
+0710;Česká národní banka;CNBACZPP
+0800;Česká spořitelna, a.s.;GIBACZPX
+2010;Fio banka, a.s.;FIOBCZPP
+2020;MUFG Bank (Europe) N.V. Prague Branch;BOTKCZPP
+2060;Citfin, spořitelní družstvo;CITFCZPP
+2070;TRINITY BANK a.s.;MPUBCZPP
+2100;Hypoteční banka, a.s.;Nemá SWIFT/BIC
+2200;Peněžní dům, spořitelní družstvo;Nemá SWIFT/BIC
+2220;Artesa, spořitelní družstvo;ARTTCZPP
+2250;Banka CREDITAS a.s.;CTASCZ22
+2260;NEY spořitelní družstvo;Nemá SWIFT/BIC
+2275;Podnikatelská družstevní záložna;Nemá SWIFT/BIC
+2600;Citibank Europe plc, organizační složka;CITICZPX
+2700;UniCredit Bank Czech Republic and Slovakia, a.s.;BACXCZPP
+3030;Air Bank a.s.;AIRACZPP
+3050;BNP Paribas Personal Finance SA, odštěpný závod;BPPF CZ P1
+3060;PKO BP S.A., Czech Branch;BPKO CZ PP
+3500;ING Bank N.V.;INGBCZPP
+4000;Max banka a.s. (dříve Expobank CZ a.s.);EXPNCZPP
+4300;Národní rozvojová banka, a.s.;CMZRCZP1
+5500;Raiffeisenbank a.s.;RZBCCZPP
+5800;J & T Banka, a.s.;JTBPCZPP
+6000;PPF banka a.s.;PMBPCZPP
+6100;Raiffeisenbank a.s. (do 31. 12. 2021 Equa bank a.s.);EQBKCZPP
+6200;COMMERZBANK Aktiengesellschaft, pobočka Praha;COBACZPX
+6210;mBank S.A., organizační složka;BREXCZPP
+6300;BNP Paribas S.A., pobočka Česká republika;GEBACZPP
+6700;Všeobecná úverová banka a.s., pobočka Praha;SUBACZPP
+7910;Deutsche Bank Aktiengesellschaft Filiale Prag, organizační složka;DEUTCZPX
+7950;Raiffeisen stavební spořitelna a.s.;Nemá SWIFT/BIC
+7960;ČSOB Stavební spořitelna, a.s.;Nemá SWIFT/BIC
+7970;MONETA Stavební spořitelna, a.s.;Nemá SWIFT/BIC
+7990;Modrá pyramida stavební spořitelna, a.s.;Nemá SWIFT/BIC
+8030;Volksbank Raiffeisenbank Nordoberpfalz eG pobočka Cheb;GENOCZ21
+8040;Oberbank AG pobočka Česká republika;OBKLCZ2X
+8060;Stavební spořitelna České spořitelny, a.s.;Nemá SWIFT/BIC
+8090;Česká exportní banka, a.s.;CZEECZPP
+8150;HSBC Bank plc - pobočka Praha;MIDLCZPP
+8190;Sparkasse Oberlausitz-Niederschlesien;Nemá SWIFT/BIC
+8198;FAS finance company s.r.o.;FFCSCZP1
+8199;MoneyPolo Europe s.r.o.;MOUSCZP2
+8200;PRIVAT BANK der Raiffeisenlandesbank Oberösterreich Aktiengesellschaft, pobočka Česká republika;Nemá SWIFT/BIC
+8220;Payment Execution s.r.o.;PAERCZP1
+8230;ABAPAY s.r.o.;Nemá SWIFT/BIC
+8240;Družstevní záložna Kredit, v likvidaci;Nemá SWIFT/BIC
+8250;Bank of China (CEE) Ltd. Prague Branch;BKCHCZPP
+8255;Bank of Communications Co., Ltd., Prague Branch odštěpný závod;COMMCZPP
+8265;Industrial and Commercial Bank of China Limited, Prague Branch, odštěpný závod;ICBKCZPP
+8270;Fairplay Pay s.r.o.;FAPOCZP1
+8280;B-Efekt a.s.;BEFKCZP1
+8293;Mercurius partners s.r.o.;MRPSCZPP
+8250;BESTPAY s.r.o.;BEORCZP2
+8500;Ferratum Bank plc;Nemá SWIFT/BIC
