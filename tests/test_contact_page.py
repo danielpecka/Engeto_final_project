@@ -22,4 +22,4 @@ def test_email_format(page: Page):
             assert re.match(r"^[\w\.-]+@[\w\.-]+\.\w{2,}$", email), f"Invalid email format: {email}"
         
         # Subtest B: Verify Specific Email
-        assert "sales@engeto.cz" in email_elements, "sales@engeto.cz not found on the page."
+        assert "sales@engeto.com" in email_elements, "sales@engeto.com not found on the page."
