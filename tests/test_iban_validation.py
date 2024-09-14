@@ -1,7 +1,8 @@
+# test_iban_validation.py
 from playwright.sync_api import Page
 from locators.iban_page_locators import IBAN_INPUT_LOCATOR, TEST_BUTTON_LOCATOR, BANK_CODE_LOCATOR, GENERATED_SWIFT_LOCATOR
 from utils.scrape_iban_and_swift import scrape_iban_and_swift, extract_iban, extract_swift
-from utils.wait import wait_after_step
+# from utils.wait import wait_after_step <- uncomment the import if you wish to insert waits into the code, do that by adding a line "wait_after_step()"
 
 def test_iban_and_swift_code(page: Page):
     # Step 1: Scrape IBAN and SWIFT from Engeto page
@@ -62,7 +63,7 @@ def test_iban_and_swift_code(page: Page):
         bank_code_file, bank_name, swift_code_file = line.strip().split(";")
         if bank_code == bank_code_file and generated_swift == swift_code_file:
             found_match = True
-            print(f"Bank of Engeto: {bank_name}")
+            print(f"\n---------> Bank of Engeto: {bank_name}")
             break
 
     assert found_match, "Bank code and SWIFT code do not match the list."

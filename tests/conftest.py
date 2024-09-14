@@ -1,3 +1,4 @@
+# conftest.py
 import pytest
 from playwright.sync_api import sync_playwright
 
@@ -29,8 +30,8 @@ def pytest_runtest_makereport(item, call):
     if call.when == "call":
         if call.excinfo is None:
             # Test passed
-            print(f"✅ Test '{item.name}' PASSED")
+            print(f"Test '{item.name}' PASSED")
         else:
             # Test failed
-            print(f"❌ Test '{item.name}' FAILED")
+            print(f"Test '{item.name}' FAILED")
 

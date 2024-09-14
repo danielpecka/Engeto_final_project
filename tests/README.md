@@ -1,0 +1,1 @@
+Fiktívna dokumentácia k projektu. Proces som sa snažil čo najlepšie popísať priamo v kóde. Vďaka za super skúsenosť z kurzu!
