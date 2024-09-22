@@ -1,19 +1,32 @@
 # test_iban_validation.py
 from playwright.sync_api import Page
-from locators.iban_page_locators import IBAN_INPUT_LOCATOR, TEST_BUTTON_LOCATOR, BANK_CODE_LOCATOR, GENERATED_SWIFT_LOCATOR
-from utils.scrape_iban_and_swift import scrape_iban_and_swift, extract_iban, extract_swift
+from locators.iban_page_locators import (
+    IBAN_INPUT_LOCATOR,
+    TEST_BUTTON_LOCATOR,
+    BANK_CODE_LOCATOR,
+    GENERATED_SWIFT_LOCATOR,
+)
+from utils.scrape_iban_and_swift import (
+    scrape_iban_and_swift,
+    extract_iban,
+    extract_swift,
+)
+
 # from utils.wait import wait_after_step <- uncomment the import if you wish to insert waits into the code, do that by adding a line "wait_after_step()"
+
 
 def test_iban_and_swift_code(page: Page):
     # Step 1: Scrape IBAN and SWIFT from Engeto page
     scraped_codes = scrape_iban_and_swift()  # Scrape IBAN and SWIFT
 
-    iban = extract_iban(scraped_codes)       # Extract IBAN
+    iban = extract_iban(scraped_codes)  # Extract IBAN
     original_swift = extract_swift(scraped_codes)  # Extract SWIFT
 
     # Step 2: Open IBAN Validation tool and validate IBAN
-    page.goto("https://www.cnb.cz/cs/platebni-styk/iban/kalkulator-iban-ceska-republika/")
-    
+    page.goto(
+        "https://www.cnb.cz/cs/platebni-styk/iban/kalkulator-iban-ceska-republika/"
+    )
+
     # Fill IBAN
     for iban_input_locator in IBAN_INPUT_LOCATOR:
         iban_input_element = page.locator(iban_input_locator).first
@@ -36,13 +49,17 @@ def test_iban_and_swift_code(page: Page):
     for bank_code_locator in BANK_CODE_LOCATOR:
         bank_code_element = page.locator(bank_code_locator).first
         if bank_code_element.is_visible():
-            bank_code = bank_code_element.input_value()  # Extract the value from the input field
+            bank_code = (
+                bank_code_element.input_value()
+            )  # Extract the value from the input field
             break
 
     for generated_swift_locator in GENERATED_SWIFT_LOCATOR:
         generated_swift_element = page.locator(generated_swift_locator).first
         if generated_swift_element.is_visible():
-            generated_swift = generated_swift_element.input_value()  # Extract the value from the input field
+            generated_swift = (
+                generated_swift_element.input_value()
+            )  # Extract the value from the input field
             break
 
     # Step 4: Assertions

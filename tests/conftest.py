@@ -2,6 +2,7 @@
 import pytest
 from playwright.sync_api import sync_playwright
 
+
 # Fixture to launch a browser with parametrization
 @pytest.fixture(scope="session", params=["chromium", "firefox"])
 def browser(request):
@@ -15,6 +16,7 @@ def browser(request):
         yield browser
         browser.close()
 
+
 # Fixture to set up a new page for each test
 @pytest.fixture(scope="function")
 def page(browser):
@@ -25,6 +27,7 @@ def page(browser):
 
     import pytest
 
+
 # Pytest hook to add custom test reporting
 def pytest_runtest_makereport(item, call):
     if call.when == "call":
@@ -34,4 +37,3 @@ def pytest_runtest_makereport(item, call):
         else:
             # Test failed
             print(f"Test '{item.name}' FAILED")
-
